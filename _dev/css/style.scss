@@ -39,15 +39,19 @@ html, body {
     background: #232323;
   }
 
+  &-4 {
+    background: #ffffff;
+  }
+
   &-5 {
     background: #232323;
   }
 }
 
 .logo__link{
-  display: block;
-  width: 14%;
-  margin-left: 3%;
+  position: absolute;
+  left: 3%;
+  top: 45px;
 
   & img{
     max-width: 100%;
@@ -75,6 +79,7 @@ html, body {
       text-decoration: none;
       border: 1px solid white;
       padding: 9px 32px;
+  transition: all 0.5s;
 
     &-white{
       color: #454545;
@@ -92,6 +97,7 @@ html, body {
   text-decoration: none;
   background: white;
   padding: 10px 32px;
+  transition: all 0.5s;
 
   &-black{
     background-color: #454545;
@@ -104,6 +110,94 @@ html, body {
   right: 50px;
   top: 48px;
   z-index: 5;
+
+  &-close {
+    display: none;
+  }
+}
+
+.menu__popup {
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #232323;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.menu__popup-open {
+  display: flex;
+}
+
+.menu__popup-nav {
+  & ul, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  & ul {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.menu__popup-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  text-decoration: none;
+  height: 15vw;
+  width: 15vw;
+  border: solid 1px #bbbbbb;
+  padding-bottom: 10%;
+  padding-left: 15%;
+
+  & p {
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    color: #eeeeee;
+    margin-top: 8%;
+  }
+
+  &:hover {
+    border-style: solid;
+    border-width: 1px;
+    border-image-source: linear-gradient(135deg, #00e8ef, #00d8ff);
+    border-image-slice: 1;
+
+    & p {
+      color: #00e8ef;
+    }
+
+    & .st0 {
+      fill: #00e8ef;
+    }
+  }
+}
+
+.menu__popup-link-active {
+  border-style: solid;
+  border-width: 2px;
+  border-image-source: linear-gradient(135deg, #00e8ef, #00d8ff);
+  border-image-slice: 1;
+
+  & p {
+    color: #00e8ef;
+  }
+
+  & .st0 {
+    fill: #00e8ef;
+  }
+
 }
 
 .main__index{
@@ -113,6 +207,7 @@ html, body {
   align-items: center;
   justify-content: space-between;
   height: 100%;
+  padding-bottom: 50px;
 }
 
 .number__img {
@@ -131,6 +226,8 @@ html, body {
   background: transparent;
   border: 0;
   cursor: pointer;
+  position: relative;
+  z-index: 1;
 }
 
 .main__index-content{
@@ -220,7 +317,8 @@ html, body {
 .index__logoblock {
   margin-left: auto;
   margin-right: 7%;
-  margin-top: 40px;
+  margin-top: 35px;
+  margin-bottom: 45px;
   width: 44%;
   display: flex;
   flex-flow: row wrap;
@@ -300,7 +398,6 @@ html, body {
 
 .contacts__block {
   margin-top: 100px;
-  z-index: 5;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -347,6 +444,7 @@ html, body {
   font-weight: 600;
   line-height: 1.42;
   color: #ababab;
+  transition: all 0.5s;
 }
 
 .form-control {
@@ -374,7 +472,7 @@ html, body {
 
 .form-control:valid + label, .form-control:focus + label {
   font-size: 10px;
-  bottom: 20px;
+  bottom: 15px;
 }
 
 .form-control-textarea:valid + label, .form-control-textarea:focus + label {
@@ -407,4 +505,157 @@ html, body {
   background: transparent;
   padding: 8px 32px;
   margin-top: 15px;
+}
+
+.cmn-toggle-switch {
+  position: absolute;
+  color: white;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  width: 108px;
+  height: 96px;
+  font-size: 0;
+  text-indent: -9999px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  box-shadow: none;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: background 0.3s;
+  transition: background 0.3s;
+  z-index: 4;
+  margin-bottom: 10vh;
+}
+
+.cmn-toggle-switch:focus {
+  outline: none;
+}
+
+.cmn-toggle-switch-white {
+
+  & span {
+    background: black !important;
+
+    &::before {
+      background-color: black !important;
+    }
+
+    &::after {
+      background-color: black !important;
+    }
+  }
+}
+
+.active > span {
+
+  &::before {
+    background-color: white !important;
+  }
+
+  &::after {
+    background-color: white !important;
+  }
+
+}
+
+.cmn-toggle-switch span {
+  display: block;
+  position: absolute;
+  top: 45px;
+  left: 50px;
+  right: 18px;
+  height: 3px;
+  background: white;
+  border-radius: 3px;
+  z-index: 4;
+}
+
+.cmn-toggle-switch span::before,
+.cmn-toggle-switch span::after {
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+  content: "";
+  border-radius: 3px;
+
+}
+
+.cmn-toggle-switch span::before {
+  top: -12px;
+  width: 85%;
+}
+
+.cmn-toggle-switch span::after {
+  bottom: -12px;
+  width: 60%;
+}
+
+/**
+* Стиль 2
+*
+* «Гамбургер» превращается в «x» (класс htx).
+* Берется исходное состояние, затем полоски плавно перемещаются в центр
+* и трансформируются в «x».
+*/
+.cmn-toggle-switch__htx {
+  background-color: transparent;
+}
+
+.cmn-toggle-switch__htx span {
+  -webkit-transition: background 0 0.3s;
+  transition: background 0 0.3s;
+}
+
+.cmn-toggle-switch__htx span::before,
+.cmn-toggle-switch__htx span::after {
+  -webkit-transition-duration: 0.3s, 0.3s;
+  transition-duration: 0.3s, 0.3s;
+  -webkit-transition-delay: 0.3s, 0;
+  transition-delay: 0.3s, 0;
+}
+
+.cmn-toggle-switch__htx span::before {
+  -webkit-transition-property: top, -webkit-transform;
+  transition-property: top, transform;
+}
+
+.cmn-toggle-switch__htx span::after {
+  -webkit-transition-property: bottom, -webkit-transform;
+  transition-property: bottom, transform;
+}
+
+/* активное состояние, т.е. меню открыто */
+.cmn-toggle-switch__htx.active {
+  background-color: transparent;
+}
+
+.cmn-toggle-switch__htx.active span {
+  background: none;
+}
+
+.cmn-toggle-switch__htx.active span::before {
+  top: 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.cmn-toggle-switch__htx.active span::after {
+  bottom: 0;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.cmn-toggle-switch__htx.active span::before,
+.cmn-toggle-switch__htx.active span::after {
+  -webkit-transition-delay: 0, 0.3s;
+  transition-delay: 0, 0.3s;
+  width: 110%;
 }
