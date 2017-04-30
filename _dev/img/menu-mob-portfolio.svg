@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="164px" height="158px" viewBox="0 0 164 158" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>Menu-mob-portfolio</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#00E8EF" offset="0%"></stop>
+            <stop stop-color="#00D8FF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="-69.4189624%" x2="100%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#00E8EF" offset="0%"></stop>
+            <stop stop-color="#00D8FF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="5.27325331%" y1="-9.55839701%" x2="88.0214052%" y2="92.6820595%" id="linearGradient-3">
+            <stop stop-color="#00E8EF" offset="0%"></stop>
+            <stop stop-color="#00D8FF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Menu-mob" transform="translate(-184.000000, -78.000000)">
+            <rect id="Rectangle" fill="#232323" x="-5" y="0" width="382" height="668"></rect>
+            <g id="menu-item" transform="translate(21.000000, 78.000000)">
+                <rect id="Rectangle-7" stroke="#BBBBBB" stroke-width="1" x="0.5" y="0.5" width="163"
+                      height="157"></rect>
+                <text id="About" font-family="ProximaNova-Regular, Proxima Nova" font-size="24" font-weight="normal"
+                      fill="#EEEEEE">
+                    <tspan x="24.1967213" y="135.319672">About</tspan>
+                </text>
+            </g>
+            <g id="menu-item-selected" transform="translate(184.000000, 78.000000)">
+                <rect id="Rectangle-7" stroke="url(#linearGradient-1)" stroke-width="2" x="1" y="1" width="162"
+                      height="156"></rect>
+                <text id="About" fill="url(#linearGradient-2)" fill-rule="evenodd"
+                      font-family="ProximaNova-Regular, Proxima Nova" font-size="24" font-weight="normal">
+                    <tspan x="24.1967213" y="135.319672">Portfolio</tspan>
+                </text>
+            </g>
+            <g id="portfolio" transform="translate(245.000000, 127.000000)" stroke="url(#linearGradient-3)"
+               stroke-width="2">
+                <rect id="Rectangle-path" x="0.35" y="5.91827677" width="41.3" height="30.6053018" rx="1"></rect>
+                <path d="M25.9,5.91827677 L25.9,1.59973725 C25.9,0.770149938 25.2731986,0.0976365457 24.5,0.0976365457 L17.5,0.0976365457 C16.7268014,0.0976365457 16.1,0.770149938 16.1,1.59973725 L16.1,5.91827677"
+                      id="Shape"></path>
+                <path d="M21,26.8650711 L21,19.5273091" id="Shape"></path>
+                <path d="M41.65,15.3740007 L41.195,19.5273091 C40.7954704,21.9447953 38.8282415,23.7000065 36.54,23.6806176 L5.558,23.6806176 C3.26149099,23.6949765 1.28287512,21.9479947 0.854,19.5273091 L0.35,15.3740007"
+                      id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="164px" height="158px" viewBox="0 0 164 158" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>Menu-mob-about</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#00E8EF" offset="0%"></stop>
+            <stop stop-color="#00D8FF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="-69.4189624%" x2="100%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#00E8EF" offset="0%"></stop>
+            <stop stop-color="#00D8FF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Menu-mob" transform="translate(-21.000000, -78.000000)">
+            <rect id="Rectangle" fill="#232323" x="-5" y="0" width="382" height="668"></rect>
+            <g id="menu-item" transform="translate(21.000000, 78.000000)">
+                <rect id="Rectangle-7" stroke="#BBBBBB" stroke-width="1" x="0.5" y="0.5" width="163"
+                      height="157"></rect>
+                <text id="About" font-family="ProximaNova-Regular, Proxima Nova" font-size="24" font-weight="normal"
+                      fill="#EEEEEE">
+                    <tspan x="24.1967213" y="135.319672">About</tspan>
+                </text>
+            </g>
+            <g id="menu-item-selected" transform="translate(184.000000, 78.000000)">
+                <rect id="Rectangle-7" stroke="url(#linearGradient-1)" stroke-width="2" x="1" y="1" width="162"
+                      height="156"></rect>
+                <text id="About" fill="url(#linearGradient-2)" fill-rule="evenodd"
+                      font-family="ProximaNova-Regular, Proxima Nova" font-size="24" font-weight="normal">
+                    <tspan x="24.1967213" y="135.319672">Portfolio</tspan>
+                </text>
+            </g>
+            <path d="M115.757135,167.842687 C116.213931,167.788016 116.627904,167.554214 116.903044,167.195502 C117.178185,166.836791 117.290589,166.384335 117.214187,165.943069 L115.061744,153.225485 L124.48303,144.162246 C124.935102,143.726799 125.096583,143.081025 124.900591,142.492391 C124.704598,141.903758 124.184507,141.472503 123.55573,141.377245 L110.442173,139.42937 L104.498007,127.90308 C104.211651,127.349403 103.628692,127 102.991272,127 C102.353852,127 101.770893,127.349403 101.484537,127.90308 L95.5403716,139.42937 L82.4268138,141.377245 C81.7980513,141.472529 81.277986,141.903793 81.0820128,142.492422 C80.8860396,143.081051 81.0475296,143.72681 81.4995985,144.162246 L90.9207997,153.225485 L88.7682722,165.943069 C88.6616382,166.558215 88.9232577,167.178904 89.4432265,167.54439 C89.9631953,167.909877 90.6514312,167.956841 91.218812,167.665555 L102.991272,161.741467 L114.763732,167.665555 C115.068481,167.821876 115.415164,167.883692 115.757135,167.842687 L115.757135,167.842687 Z M114.169455,163.998793 L104.253136,159.011337 C103.74768,158.755717 103.14579,158.755717 102.640335,159.011337 L92.7240156,163.998793 L94.5424737,153.289978 C94.634198,152.745969 94.4487484,152.192507 94.0450397,151.805419 L86.1015308,144.165726 L97.1331297,142.547806 C97.6953823,142.466383 98.1817649,142.124155 98.4370522,141.630339 L103.446735,131.922324 L108.456419,141.630339 C108.711706,142.124155 109.198088,142.466383 109.760341,142.547806 L120.79194,144.165726 L112.848431,151.805419 C112.444722,152.192507 112.259273,152.745969 112.350997,153.289978 L114.169455,163.998793 L114.169455,163.998793 Z"
+                  id="Shape-Copy" fill="#FFFFFF" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>
