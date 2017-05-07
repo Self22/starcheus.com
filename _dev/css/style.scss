@@ -51,6 +51,8 @@ html, body {
   position: absolute;
   left: 3%;
   top: 45px;
+  cursor: pointer;
+  z-index: 1;
 
   & img{
     max-width: 100%;
@@ -83,12 +85,14 @@ html, body {
     &-white{
       color: #454545;
       border: 1px solid black;
+      background: white;
     }
 
   &-active {
     color: #454545;
     border: none;
     text-decoration: line-through;
+    background: white;
   }
 
   }
@@ -109,6 +113,13 @@ html, body {
     background-color: #454545;
     color: #eeeeee;
   }
+
+  &-active {
+    color: #eeeeee;
+    text-decoration: line-through;
+    background: black;
+    border: none;
+  }
 }
 
 .main__nav{
@@ -124,6 +135,21 @@ html, body {
 
 .menu__popup {
 
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #232323;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.menu__popup-sec {
+
   position: fixed;
   top: 0;
   right: 0;
@@ -136,6 +162,7 @@ html, body {
   align-items: center;
   display: none;
 }
+
 
 .menu__popup-open {
   display: flex;
@@ -213,7 +240,24 @@ html, body {
   align-items: center;
   justify-content: space-between;
   height: 100%;
-  padding-bottom: 50px;
+}
+
+.main__price {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  justify-content: center;
+}
+
+.main__contacts {
+  background: black;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  justify-content: flex-end;
+
 }
 
 .main__portfolio {
@@ -225,7 +269,21 @@ html, body {
   padding-bottom: 150px;
 }
 
+.main__contacts-content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  width: 60%;
+  margin-right: 11%;
+}
+
 .main__portfolio-content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 25vh;
+}
+
+.main__price-content {
   display: flex;
   flex-direction: column;
   margin-top: 25vh;
@@ -259,7 +317,7 @@ html, body {
   justify-content: center;
 
   &2{
-    padding-right: 210px;
+    padding-right: 4%;
   }
 
   &5 {
@@ -270,7 +328,7 @@ html, body {
 
 .title__index{
   font-family: 'ProximaNova-Black';
-  font-size: 11vw;
+  font-size: 8vw;
   font-weight: 900;
   line-height: 1;
   color: #ffffff;
@@ -286,7 +344,6 @@ html, body {
     color: #4a4a4a;
     text-align: right;
     margin-right: 7%;
-    font-size: 132px;
   }
 
   &-4 {
@@ -300,6 +357,13 @@ html, body {
   &-portfolio {
     text-align: center;
     color: black;
+  }
+
+  &-contacts {
+    line-height: 1;
+    color: #4a4a4a;
+    text-align: left;
+    margin-left: auto;
   }
 }
 
@@ -335,7 +399,7 @@ html, body {
 }
 
 .sec__index-socials {
-  position: fixed;
+  position: absolute;
   top: 50vh;
   right: 2%;
   transform: translateY(-34%);
@@ -382,7 +446,6 @@ html, body {
   margin-left: auto;
   margin-right: 7%;
   margin-top: 35px;
-  margin-bottom: 45px;
   width: 44%;
   display: flex;
   flex-flow: row wrap;
@@ -390,15 +453,23 @@ html, body {
 
 .index__logo {
   flex: 33%;
+  width: 33%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
+  & img {
+    max-width: 100%;
+    height: auto;
+  }
+
   & p {
-    font-size: 20.5px;
+    font-size: 16px;
     text-align: center;
     color: #eeeeee;
+    padding: 0;
+    margin: 0;
   }
 }
 
@@ -465,6 +536,15 @@ html, body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+
+  &-price {
+    background: black;
+    padding: 50px 7% 50px 19%;
+  }
+
+  &-contacts {
+    margin-top: 50px;
+  }
 }
 
 .contacts__form {
@@ -531,7 +611,7 @@ html, body {
 }
 
 .form-control-textarea {
-  width: 80%;
+  width: 85%;
 }
 
 .form-control:valid + label, .form-control:focus + label {
@@ -591,7 +671,6 @@ html, body {
   -webkit-transition: background 0.3s;
   transition: background 0.3s;
   z-index: 4;
-  margin-bottom: 10vh;
 }
 
 .cmn-toggle-switch:focus {
@@ -823,3 +902,68 @@ html, body {
   padding: 10px 33px;
   cursor: pointer;
 }
+
+.price__descr {
+  font-size: 16px;
+  color: #343434;
+  margin-left: 50%;
+  margin-right: 15%;
+  margin-top: 35px;
+}
+
+.price__list {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  width: 75%;
+  margin: 0 10% 0 15%;
+
+  & ul, li, p, span, h4, h3 {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+}
+
+.price__item {
+  flex: 50%;
+  padding: 50px 5% 10px !important;
+}
+
+.price__item-title {
+  font-size: 2.9vw;
+  font-weight: bold;
+  letter-spacing: -1.5px;
+  color: #bbbbbb;
+  margin-bottom: 15px !important;
+}
+
+.price__position {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.price__position-title {
+  font-size: 1.5vw;
+  color: #343434;
+}
+
+.from {
+  font-size: 1vw;
+  text-align: right;
+  color: #bbbbbb;
+  margin-left: auto !important;
+}
+
+.price__value {
+  width: 20%;
+  font-size: 1.7vw;
+  text-align: right;
+  color: #454545;
+  text-align: right;
+}
+
