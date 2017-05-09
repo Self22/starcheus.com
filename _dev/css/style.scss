@@ -269,6 +269,16 @@ html, body {
   padding-bottom: 150px;
 }
 
+.firststscreen__portitem {
+  background: black;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  padding-bottom: 20vh;
+}
+
 .main__contacts-content {
   display: flex;
   flex-direction: column;
@@ -360,6 +370,7 @@ html, body {
   }
 
   &-contacts {
+    font-size: 7vw;
     line-height: 1;
     color: #4a4a4a;
     text-align: left;
@@ -967,3 +978,41 @@ html, body {
   text-align: right;
 }
 
+.contacts__slider {
+  display: inline;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  & li {
+    padding: 0;
+    margin: 0;
+    font-family: 'ProximaNova-Black';
+    font-size: 7vw;
+    font-weight: 900;
+    line-height: 1;
+    color: #4a4a4a;
+    text-align: right;
+  }
+}
+
+.portitem__title {
+  font-family: 'ProximaNova-Bold';
+  padding: 0;
+  margin: 0;
+  font-size: 144px;
+  font-weight: 900;
+  line-height: 1;
+  text-align: center;
+  color: #ffffff;
+}
+
+.portitem__descr {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: -1px;
+  text-align: center;
+  color: #ffffff;
+}
