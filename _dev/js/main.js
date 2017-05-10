@@ -53,3 +53,11 @@ for (var i = 0; i < openNav.length; i++) {
 
 }
 
+$('#slider1').bxSlider({
+    mode: 'fade',
+    auto: true,
+    pause: 2000,
+    controls: false,
+    pager: false
+});
+
