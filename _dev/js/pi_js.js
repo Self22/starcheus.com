@@ -1,6 +1,5 @@
 "use strict";
 
-
 /////////////////////////// menu
 
 var openNav = document.querySelectorAll(".cmn-toggle-switch");
@@ -18,11 +17,17 @@ for (var i = 0; i < openNav.length; i++) {
 
 }
 
+$(function () {
+
+    $('.side').fixer({
+
+        gap: 50
+
+    });
+
+});
 
 
-
-
-
-
+/////////////////////// fixer
 
 
