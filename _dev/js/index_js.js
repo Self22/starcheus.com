@@ -34,27 +34,37 @@ $(document).ready(function () {
             if (index == 1) {
                 $(".works__link").removeClass("works__link-white");
                 $(".contact__link").removeClass("contact__link-black");
+                $(".cmn-toggle-switch").removeClass("cmn-toggle-switch-white");
+                $(".main__index-socials").removeClass("main__index-socials-black");
             }
 
 
             if (index == 2) {
                 $(".works__link").addClass("works__link-white");
                 $(".contact__link").addClass("contact__link-black");
+                $(".cmn-toggle-switch").addClass("cmn-toggle-switch-white");
+                $(".main__index-socials").addClass("main__index-socials-black");
             }
 
             if (index == 3) {
                 $(".works__link").removeClass("works__link-white");
                 $(".contact__link").removeClass("contact__link-black");
+                $(".cmn-toggle-switch").removeClass("cmn-toggle-switch-white");
+                $(".main__index-socials").removeClass("main__index-socials-black");
             }
 
             if (index == 4) {
                 $(".works__link").addClass("works__link-white");
                 $(".contact__link").addClass("contact__link-black");
+                $(".cmn-toggle-switch").addClass("cmn-toggle-switch-white");
+                $(".main__index-socials").addClass("main__index-socials-black");
             }
 
             if (index == 5) {
                 $(".works__link").removeClass("works__link-white");
                 $(".contact__link").removeClass("contact__link-black");
+                $(".cmn-toggle-switch").removeClass("cmn-toggle-switch-white");
+                $(".main__index-socials").removeClass("main__index-socials-black");
             }
 
         }
