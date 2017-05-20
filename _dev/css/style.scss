@@ -107,7 +107,7 @@ html, body {
   transition: all 0.5s;
 
   @include phones {
-    padding: 3vw 11vw;
+    padding: 3vw 9vw;
     margin-right: 3vw;
   }
 
@@ -139,7 +139,7 @@ html, body {
   transition: all 0.5s;
 
   @include phones {
-    padding: 3vw 11vw;
+    padding: 3vw 9vw;
   }
 
   &-black{
@@ -385,7 +385,7 @@ html, body {
   &-5 {
 
     @include phones {
-      bottom: 90px;
+      bottom: 0;
     }
 
   }
