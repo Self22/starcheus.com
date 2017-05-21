@@ -452,7 +452,7 @@ html, body {
 
     @include phones {
       margin-right: 0;
-      margin-bottom: 5%;
+      margin-bottom: -10%;
     }
 
   }
@@ -1428,12 +1428,17 @@ html, body {
 
 .mob__scheme {
 
+  display: none;
   width: 100%;
 
   & img {
     width: 100%;
     height: auto;
     margin-top: 210px;
+  }
+
+  @include phones {
+    display: block;
   }
 
 }
