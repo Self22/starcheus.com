@@ -107,7 +107,7 @@ html, body {
   transition: all 0.5s;
 
   @include phones {
-    padding: 3vw 11vw;
+    padding: 3vw 9vw;
     margin-right: 3vw;
   }
 
@@ -139,7 +139,7 @@ html, body {
   transition: all 0.5s;
 
   @include phones {
-    padding: 3vw 11vw;
+    padding: 3vw 9vw;
   }
 
   &-black{
@@ -385,7 +385,7 @@ html, body {
   &-5 {
 
     @include phones {
-      bottom: 90px;
+      bottom: 0;
     }
 
   }
@@ -452,7 +452,7 @@ html, body {
 
     @include phones {
       margin-right: 0;
-      margin-bottom: 5%;
+      margin-bottom: -10%;
     }
 
   }
@@ -1428,12 +1428,17 @@ html, body {
 
 .mob__scheme {
 
+  display: none;
   width: 100%;
 
   & img {
     width: 100%;
     height: auto;
     margin-top: 210px;
+  }
+
+  @include phones {
+    display: block;
   }
 
 }
