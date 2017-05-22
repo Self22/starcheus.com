@@ -163,7 +163,10 @@ html, body {
   min-width: 300px;
 
   @include phones {
-    min-width: 86vw;
+    min-width: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
 
   &-close {
