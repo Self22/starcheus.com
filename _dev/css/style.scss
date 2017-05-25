@@ -180,6 +180,13 @@ html, body {
     transform: translateX(-50%);
   }
 
+  &-mobhd {
+    @include phones {
+      display: none;
+    }
+
+  }
+
 }
 
 .menu__popup {
@@ -238,7 +245,7 @@ html, body {
     @include phones {
       display: block;
       font-size: 0;
-      width: 80vw;
+      width: 72vw;
     }
     
   }
@@ -246,8 +253,8 @@ html, body {
   & li {
     @include phones {
       display: inline-block;
-      width: 40vw;
-      height: 40vw;
+      width: 36vw;
+      height: 36vw;
     }
   }
 }
@@ -290,6 +297,7 @@ html, body {
   @include phones {
     width: 100%;
     height: 100%;
+    padding-left: 10%;
   }
 }
 
@@ -349,6 +357,10 @@ html, body {
   height: 100%;
   justify-content: center;
   padding-bottom: 150px;
+
+  @include phones {
+    padding-bottom: 15px;
+  }
 }
 
 
@@ -494,6 +506,13 @@ html, body {
   &-portfolio {
     text-align: center;
     color: black;
+
+    @include phones {
+      margin-bottom: 0;
+      text-align: left;
+      margin-left: 5%;
+
+    }
   }
 
   &-contacts {
@@ -572,6 +591,12 @@ html, body {
       color: black;
     }
   }
+
+  &-mobhd {
+    @include phones {
+      display: none;
+    }
+  }
 }
 
 .sec__nav {
@@ -579,6 +604,10 @@ html, body {
   top: 50vh;
   left: -1%;
   transform: translateY(-50%);
+
+  @include phones {
+    transform: translateY(0);
+  }
 
 }
 
@@ -1038,6 +1067,12 @@ html, body {
   width: 70%;
   margin-left: 18%;
   margin-top: 8vh;
+
+  @include phones {
+    width: 90%;
+    margin: 0 4% 0 6%;
+    margin-top: 4vh;
+  }
 }
 
 .portfolio__demo-item {
@@ -1054,6 +1089,15 @@ html, body {
     height: auto;
     padding: 0;
     margin: 0;
+  }
+
+  @include phones {
+
+    flex: 46%;
+    max-width: 46%;
+    margin-right: 4%;
+    display: flex;
+    align-items: baseline;
   }
 }
 
@@ -1107,12 +1151,24 @@ html, body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @include phones {
+    min-height: 18vh;
+  }
 }
 
 .portfolio__contacts-title {
+  padding: 0;
+  margin: 0;
   font-size: 24px;
   text-align: center;
   color: #f8f8f8;
+  margin-bottom: 10px;
+
+  @include phones {
+    font-size: 14px;
+
+  }
 }
 
 .portfolio__contacts-link {
@@ -1125,6 +1181,11 @@ html, body {
   background-color: #7ed321;
   padding: 10px 33px;
   cursor: pointer;
+
+  @include phones {
+    font-size: 12px;
+    padding: 5px 18px;
+  }
 }
 
 .price__descr {
