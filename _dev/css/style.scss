@@ -212,7 +212,7 @@ html, body {
   left: 0;
   bottom: 0;
   background-color: #232323;
-  z-index: 1;
+  z-index: 9;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -348,6 +348,10 @@ html, body {
   height: 100vh;
   justify-content: flex-end;
 
+  @include phones {
+    height: 100%;
+  }
+
 }
 
 .main__portfolio {
@@ -371,6 +375,11 @@ html, body {
   width: 60%;
   margin-right: 11%;
   padding-bottom: 50px;
+
+  @include phones {
+    width: 100%;
+    margin-right: 0;
+  }
 }
 
 .main__portfolio-content {
@@ -521,6 +530,14 @@ html, body {
     color: #4a4a4a;
     text-align: left;
     margin-left: auto;
+
+    @include phones {
+      font-size: 14vw;
+      text-align: center;
+      margin-left: 0;
+      margin-bottom: 4%;
+      padding: 0 5%;
+    }
   }
 }
 
@@ -601,6 +618,7 @@ html, body {
 
 .sec__nav {
   position: fixed !important;
+  z-index: 100 !important;
   top: 50vh;
   left: -1%;
   transform: translateY(-50%);
@@ -770,6 +788,11 @@ html, body {
 
   &-contacts {
     margin-top: 50px;
+    padding: 0 8%;
+
+    @include phones {
+      margin-top: 40px;
+    }
   }
 }
 
@@ -902,6 +925,7 @@ html, body {
 
 .cmn-toggle-switch {
   position: absolute;
+  z-index: 100 !important;
   color: white;
   display: block;
   position: relative;
@@ -919,7 +943,7 @@ html, body {
   cursor: pointer;
   -webkit-transition: background 0.3s;
   transition: background 0.3s;
-  z-index: 4;
+
 }
 
 .cmn-toggle-switch:focus {
@@ -962,7 +986,7 @@ html, body {
   height: 3px;
   background: white;
   border-radius: 3px;
-  z-index: 4;
+  z-index: 51;
 }
 
 .cmn-toggle-switch span::before,
@@ -1301,6 +1325,11 @@ html, body {
     line-height: 1;
     color: #4a4a4a;
     text-align: right;
+
+    @include phones {
+      font-size: 14vw;
+      text-align: center;
+    }
   }
 }
 
@@ -1578,4 +1607,14 @@ html, body {
   @include phones {
     display: none;
   }
+}
+
+.contactmob_question {
+  font-family: ProximaNova-Black;
+  font-style: normal;
+  font-size: 17vw;
+  font-weight: 900;
+  line-height: 1;
+  color: #4a4a4a;
+  margin-bottom: 8vh;
 }
