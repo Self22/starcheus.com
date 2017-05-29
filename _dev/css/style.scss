@@ -835,8 +835,10 @@ html, body {
   }
 }
 
-.form-group-name {
-  margin-bottom: 20px;
+.form-group-email {
+  @include phones {
+    margin-top: 20px;
+  }
 }
 
 .form-group-textarea {

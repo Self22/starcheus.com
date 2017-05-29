@@ -24,6 +24,9 @@ for (var i = 0; i < openNav.length; i++) {
 if (window.screen.width < 480) {
     //////////// fullpage main for mobile
 
+    $(".index__screen-4").addClass("fp-auto-height-responsive");
+    $(".index__screen-5").addClass("fp-auto-height-responsive");
+
     $(document).ready(function () {
         $('#fullpage').fullpage({
             responsiveHeight: 1,
