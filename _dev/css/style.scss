@@ -1712,24 +1712,36 @@ html, body {
 }
 
 .arrow__left {
+  display: none;
   text-decoration: none;
   color: white;
   font-size: 18vw;
   padding: 0;
   margin: 0;
+
+  @include tablets {
+    display: flex;
+  }
 }
 
 .arrow__right {
+  display: none;
   text-decoration: none;
   color: white;
   font-size: 18vw;
   padding: 0;
   margin: 0;
   margin-left: 25%;
+
+  @include tablets {
+    display: flex;
+}
+
 }
 
 .portfolionav__close {
-  display: flex;
+  display: none;
+
   justify-content: center;
   align-items: center;
   flex: 20;
@@ -1737,5 +1749,9 @@ html, body {
   color: white;
   font-size: 18vw;
   padding-top: 8px;
+
+  @include tablets {
+    display: flex;
+  }
 }
 
