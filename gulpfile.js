@@ -9,7 +9,7 @@ var gulp = require('gulp'),
     // cleanCSS = require('gulp-clean-css'),
 // imagemin = require('gulp-imagemin'),
 // pngquant = require('imagemin-pngquant'),
-    cssnano = require("gulp-cssnano"),
+//     cssnano = require("gulp-cssnano"),
     rimraf = require('rimraf'),
     include = require("gulp-include"),
     browserSync = require('browser-sync'),
@@ -84,7 +84,7 @@ gulp.task('css:build', function () {
         .pipe(sass().on('error', sass.logError)) //������������
         .pipe(prefixer()) //������� ��������� ��������
         // .pipe(cleanCSS()) //������
-        .pipe(cssnano())
+        // .pipe(cssnano())
         .pipe(sourcemaps.write('.'))//�������� �����
         .pipe(gulp.dest(path.dest.css)) //� � build
         .pipe(reload({stream: true}));
