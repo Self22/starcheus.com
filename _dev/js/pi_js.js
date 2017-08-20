@@ -17,16 +17,19 @@ for (var i = 0; i < openNav.length; i++) {
 
 }
 
-$(function () {
+if (window.screen.width > 480) {
 
-    $('.side').fixer({
+    $(function () {
 
-        gap: 50
+        $('.side').fixer({
+
+            gap: 50
+
+        });
 
     });
 
-});
-
+}
 
 /////////////////////// fixer
 
