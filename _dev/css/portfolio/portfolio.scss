@@ -2,7 +2,7 @@
 
 .firstscreen__portitem {
 
-  background-size: cover;
+  background-size: cover !important;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -22,6 +22,26 @@
 
   &-artist {
     background: linear-gradient(21deg, rgba(0, 0, 0, 0.53) 8%, #000000 83%), url("../img/artist/8-1.jpg") no-repeat center;
+  }
+
+  &-contador {
+    background: linear-gradient(21deg, rgba(0, 0, 0, 0.53) 8%, #000000 83%), url("../img/contador/6-1.png") no-repeat center;
+  }
+
+  &-yoga {
+    background: linear-gradient(21deg, rgba(0, 0, 0, 0.53) 8%, #000000 83%), url("../img/yoga/4-1.jpg") no-repeat center;
+  }
+
+  &-doors {
+    background: linear-gradient(21deg, rgba(0, 0, 0, 0.53) 8%, #000000 83%), url("../img/doors/7-1.png") no-repeat center;
+  }
+
+  &-frez {
+    background: linear-gradient(21deg, rgba(0, 0, 0, 0.53) 8%, #000000 83%), url("../img/demo_frez.jpg") no-repeat center;
+  }
+
+  &-styler {
+    background: linear-gradient(21deg, rgba(0, 0, 0, 0.53) 8%, #000000 83%), url("../img/styler/20-00-redesign.jpg") no-repeat center;
   }
 }
 
@@ -262,6 +282,7 @@
   padding: 0 7% 40px 9%;
   display: flex;
   flex-direction: row;
+  margin-top: 30px;
 
   @include phones {
     flex-direction: column;

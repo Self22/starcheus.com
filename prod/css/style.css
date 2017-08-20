@@ -386,7 +386,7 @@ textarea {
   src: url("../fonts/ProximaNova-Semibold.otf"); }
 
 .firstscreen__portitem {
-  background-size: cover;
+  background-size: cover !important;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -406,9 +406,26 @@ textarea {
     .firstscreen__portitem {
       padding-bottom: 0; } }
   .firstscreen__portitem-qualie {
+    background: -webkit-linear-gradient(69deg, rgba(0, 0, 0, 0.53) 8%, #000000 83%), url("../img/qualie/fs_qualie.jpg") no-repeat center;
     background: linear-gradient(21deg, rgba(0, 0, 0, 0.53) 8%, #000000 83%), url("../img/qualie/fs_qualie.jpg") no-repeat center; }
   .firstscreen__portitem-artist {
+    background: -webkit-linear-gradient(69deg, rgba(0, 0, 0, 0.53) 8%, #000000 83%), url("../img/artist/8-1.jpg") no-repeat center;
     background: linear-gradient(21deg, rgba(0, 0, 0, 0.53) 8%, #000000 83%), url("../img/artist/8-1.jpg") no-repeat center; }
+  .firstscreen__portitem-contador {
+    background: -webkit-linear-gradient(69deg, rgba(0, 0, 0, 0.53) 8%, #000000 83%), url("../img/contador/6-1.png") no-repeat center;
+    background: linear-gradient(21deg, rgba(0, 0, 0, 0.53) 8%, #000000 83%), url("../img/contador/6-1.png") no-repeat center; }
+  .firstscreen__portitem-yoga {
+    background: -webkit-linear-gradient(69deg, rgba(0, 0, 0, 0.53) 8%, #000000 83%), url("../img/yoga/4-1.jpg") no-repeat center;
+    background: linear-gradient(21deg, rgba(0, 0, 0, 0.53) 8%, #000000 83%), url("../img/yoga/4-1.jpg") no-repeat center; }
+  .firstscreen__portitem-doors {
+    background: -webkit-linear-gradient(69deg, rgba(0, 0, 0, 0.53) 8%, #000000 83%), url("../img/doors/7-1.png") no-repeat center;
+    background: linear-gradient(21deg, rgba(0, 0, 0, 0.53) 8%, #000000 83%), url("../img/doors/7-1.png") no-repeat center; }
+  .firstscreen__portitem-frez {
+    background: -webkit-linear-gradient(69deg, rgba(0, 0, 0, 0.53) 8%, #000000 83%), url("../img/demo_frez.jpg") no-repeat center;
+    background: linear-gradient(21deg, rgba(0, 0, 0, 0.53) 8%, #000000 83%), url("../img/demo_frez.jpg") no-repeat center; }
+  .firstscreen__portitem-styler {
+    background: -webkit-linear-gradient(69deg, rgba(0, 0, 0, 0.53) 8%, #000000 83%), url("../img/styler/20-00-redesign.jpg") no-repeat center;
+    background: linear-gradient(21deg, rgba(0, 0, 0, 0.53) 8%, #000000 83%), url("../img/styler/20-00-redesign.jpg") no-repeat center; }
 
 .portitem__title {
   font-family: 'ProximaNova-Bold';
@@ -650,7 +667,8 @@ textarea {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
-          flex-direction: row; }
+          flex-direction: row;
+  margin-top: 30px; }
   @media screen and (max-width: 480px) {
     .moreworks__block {
       -webkit-box-orient: vertical;
@@ -785,6 +803,7 @@ html, body {
   text-decoration: none;
   border: 1px solid white;
   padding: 9px 32px;
+  -webkit-transition: all 0.5s;
   transition: all 0.5s; }
   @media screen and (max-width: 480px) {
     .works__link {
@@ -810,6 +829,7 @@ html, body {
   text-decoration: none;
   background: white;
   padding: 10px 32px;
+  -webkit-transition: all 0.5s;
   transition: all 0.5s; }
   @media screen and (max-width: 480px) {
     .contact__link {
@@ -1498,6 +1518,7 @@ html, body {
   font-weight: 600;
   line-height: 1.42;
   color: #ababab;
+  -webkit-transition: all 0.5s;
   transition: all 0.5s; }
 
 .form-control {
@@ -1575,6 +1596,7 @@ html, body {
   box-shadow: none;
   border: none;
   cursor: pointer;
+  -webkit-transition: background 0.3s;
   transition: background 0.3s; }
 
 .cmn-toggle-switch:focus {
@@ -1640,19 +1662,24 @@ html, body {
       left: -7%; } }
 
 .cmn-toggle-switch__htx span {
+  -webkit-transition: background 0 0.3s;
   transition: background 0 0.3s; }
 
 .cmn-toggle-switch__htx span::before,
 .cmn-toggle-switch__htx span::after {
+  -webkit-transition-duration: 0.3s, 0.3s;
   transition-duration: 0.3s, 0.3s;
+  -webkit-transition-delay: 0.3s, 0;
   transition-delay: 0.3s, 0; }
 
 .cmn-toggle-switch__htx span::before {
+  -webkit-transition-property: top, -webkit-transform;
   transition-property: top, -webkit-transform;
   transition-property: top, transform;
   transition-property: top, transform, -webkit-transform; }
 
 .cmn-toggle-switch__htx span::after {
+  -webkit-transition-property: bottom, -webkit-transform;
   transition-property: bottom, -webkit-transform;
   transition-property: bottom, transform;
   transition-property: bottom, transform, -webkit-transform; }
@@ -1676,6 +1703,7 @@ html, body {
 
 .cmn-toggle-switch__htx.active span::before,
 .cmn-toggle-switch__htx.active span::after {
+  -webkit-transition-delay: 0, 0.3s;
   transition-delay: 0, 0.3s;
   width: 110%; }
 
@@ -1751,6 +1779,7 @@ html, body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: all 0.5s;
   transition: all 0.5s;
   opacity: 0; }
 
