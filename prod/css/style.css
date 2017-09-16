@@ -453,6 +453,27 @@ textarea {
   .firstscreen__portitem-emo1 {
     background: -webkit-linear-gradient(69deg, rgba(0, 0, 0, 0.53) 8%, #000000 83%), url("../img/emoji_app/28-1.png") no-repeat center;
     background: linear-gradient(21deg, rgba(0, 0, 0, 0.53) 8%, #000000 83%), url("../img/emoji_app/28-1.png") no-repeat center; }
+  .firstscreen__portitem-emo2 {
+    background: -webkit-linear-gradient(69deg, rgba(0, 0, 0, 0.53) 8%, #000000 83%), url("../img/emoji_calc/31-1.png") no-repeat center;
+    background: linear-gradient(21deg, rgba(0, 0, 0, 0.53) 8%, #000000 83%), url("../img/emoji_calc/31-1.png") no-repeat center; }
+  .firstscreen__portitem-event {
+    background: -webkit-linear-gradient(69deg, rgba(0, 0, 0, 0.53) 8%, #000000 83%), url("../img/event/26-1.png") no-repeat center;
+    background: linear-gradient(21deg, rgba(0, 0, 0, 0.53) 8%, #000000 83%), url("../img/event/26-1.png") no-repeat center; }
+  .firstscreen__portitem-fyblab {
+    background: -webkit-linear-gradient(69deg, rgba(0, 0, 0, 0.53) 8%, #000000 83%), url("../img/fyblab/14-3.jpg") no-repeat center;
+    background: linear-gradient(21deg, rgba(0, 0, 0, 0.53) 8%, #000000 83%), url("../img/fyblab/14-3.jpg") no-repeat center; }
+  .firstscreen__portitem-guna {
+    background: -webkit-linear-gradient(69deg, rgba(0, 0, 0, 0.53) 8%, #000000 83%), url("../img/guna/3-1.png") no-repeat center;
+    background: linear-gradient(21deg, rgba(0, 0, 0, 0.53) 8%, #000000 83%), url("../img/guna/3-1.png") no-repeat center; }
+  .firstscreen__portitem-info {
+    background: -webkit-linear-gradient(69deg, rgba(0, 0, 0, 0.53) 8%, #000000 83%), url("../img/infographics/27-1.jpg") no-repeat center;
+    background: linear-gradient(21deg, rgba(0, 0, 0, 0.53) 8%, #000000 83%), url("../img/infographics/27-1.jpg") no-repeat center; }
+  .firstscreen__portitem-logo {
+    background: -webkit-linear-gradient(69deg, rgba(0, 0, 0, 0.53) 8%, #000000 83%), url("../img/logo/5-1.png") no-repeat center;
+    background: linear-gradient(21deg, rgba(0, 0, 0, 0.53) 8%, #000000 83%), url("../img/logo/5-1.png") no-repeat center; }
+  .firstscreen__portitem-messenger {
+    background: -webkit-linear-gradient(69deg, rgba(0, 0, 0, 0.53) 8%, #000000 83%), url("../img/messenger/01_main.png") no-repeat center;
+    background: linear-gradient(21deg, rgba(0, 0, 0, 0.53) 8%, #000000 83%), url("../img/messenger/01_main.png") no-repeat center; }
 
 .portitem__title {
   font-family: 'ProximaNova-Bold';
@@ -1817,7 +1838,8 @@ html, body {
   font-size: 36px;
   font-weight: 600;
   line-height: 1.33;
-  color: #ffffff; }
+  color: #ffffff;
+  text-align: center; }
 
 .portfolio__demo-descr {
   padding: 0;
