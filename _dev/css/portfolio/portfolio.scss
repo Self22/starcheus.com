@@ -104,8 +104,20 @@
     background: linear-gradient(21deg, rgba(0, 0, 0, 0.53) 8%, #000000 83%), url("../img/logo/5-1.png") no-repeat center;
   }
 
+  &-mirrow {
+    background: linear-gradient(21deg, rgba(0, 0, 0, 0.53) 8%, #000000 83%), url("../img/mirrow/feed.png") no-repeat center;
+  }
+
   &-messenger {
     background: linear-gradient(21deg, rgba(0, 0, 0, 0.53) 8%, #000000 83%), url("../img/messenger/01_main.png") no-repeat center;
+  }
+
+  &-music {
+    background: linear-gradient(21deg, rgba(0, 0, 0, 0.53) 8%, #000000 83%), url("../img/music/15-1.png") no-repeat center;
+  }
+
+  &-organizer {
+    background: linear-gradient(21deg, rgba(0, 0, 0, 0.53) 8%, #000000 83%), url("../img/organizer") no-repeat center;
   }
 }
 
